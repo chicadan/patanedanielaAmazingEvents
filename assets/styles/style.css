@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*HEADER*/
+
+header {
+   min-height: 30vh;
+   background-color: #17bfbf;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    min-height: 15vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.btn-outline {
+    color:#f2055c;
+    border: 1px solid #f2055c;
+    margin-right: 10px;
+}
+
+.carrousel {
+    display: flex;
+    background-image: url(../img/sirena.jpg);
+    background-size: cover;
+    background-position:bottom;
+    height: 25vh;
+    justify-content: center;
+}
+
+.carrousel1 {
+    display: flex;
+    background-image: url(../img/sombrilla.jpg);
+    background-size: cover;
+    background-position:bottom;
+    height: 25vh;
+    justify-content: center;
+}
+
+.carrousel2 {
+    display: flex;
+    background-image: url(../img/mar.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 25vh;
+    justify-content: center;
+}
+
+.carrousel3 {
+    display: flex;
+    background-image: url(../img/arena.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 25vh;
+    justify-content: center;
+}
+
+.carrousel4 {
+    display: flex;
+    background-image: url(../img/flor.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 25vh;
+    justify-content: center;
+}
+
+.carrousel5 {
+    display: flex;
+    background-image: url(../img/margarita.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 25vh;
+    justify-content: center;
+}
+
+ h2 {
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 4rem;
+    color:#087373;
+}
+
+/*HOME*/
+
+main {
+    min-height:60vh;
+}
+
+.btn-danger {
+    background-color:#f2055c;
+}
+
+
+.card {
+  border: 1px solid #f2055c;
+  box-shadow: 10px 10px #087373;
+  gap:2rem;
+}
+
+
+/*CONTACT*/
+
+.form-control {
+    border: 1px solid #f2055c;
+}
+
+/*STATS*/
+
+.containerTable {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.table {
+    width: 95%;
+    border: 1px solid #f2055c;
+}
+
+.table-danger {
+    font-size:1.5rem;
+    background-color: #f2055c;
+    border: 1px solid #f2055c;  
+}
+
+th , td {
+    border: 1px solid #f2055c;
+}
+
+/*DETAILS*/
+
+
+
+/*FOOTER*/
+
+footer{
+    min-height: 10vh;
+    background-color:#f2055c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons i {
+   margin-right: 10px;
+   font-size: 2rem;
+}
+
+.icons i:hover {
+    color:#17bfbf;
+    cursor: pointer;
+}
+
+footer p {
+    font-size:1.2em;
+}
+
+@media (max-width:992px) {
+    .containerNav {
+        flex-direction: column;
+    }
+    h2 {
+        font-size:3rem;
+    }
+
+}
+
+@media (max-width:576px){
+    .checkbox {
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    h2 {
+        font-size:2.5rem;
+    }
+}
