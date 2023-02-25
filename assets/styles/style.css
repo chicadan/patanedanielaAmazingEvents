@@ -8,14 +8,14 @@
 /*HEADER*/
 
 header {
-   min-height: 30vh;
+   min-height: 20vh;
    background-color: #17bfbf;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    min-height: 15vh;
+    min-height: 10vh;
     align-items: center;
     justify-content: space-around;
 }
@@ -28,57 +28,35 @@ nav {
 }
 
 .carrousel {
-    display: flex;
     background-image: url(../img/sirena.jpg);
-    background-size: cover;
-    background-position:bottom;
-    height: 25vh;
-    justify-content: center;
 }
 
 .carrousel1 {
-    display: flex;
     background-image: url(../img/sombrilla.jpg);
-    background-size: cover;
-    background-position:bottom;
-    height: 25vh;
-    justify-content: center;
 }
 
 .carrousel2 {
-    display: flex;
     background-image: url(../img/mar.jpg);
-    background-size: cover;
-    background-position:center;
-    height: 25vh;
-    justify-content: center;
 }
 
 .carrousel3 {
-    display: flex;
     background-image: url(../img/arena.jpg);
-    background-size: cover;
-    background-position:center;
-    height: 25vh;
-    justify-content: center;
 }
 
 .carrousel4 {
-    display: flex;
     background-image: url(../img/flor.jpg);
-    background-size: cover;
-    background-position:center;
-    height: 25vh;
-    justify-content: center;
 }
 
 .carrousel5 {
-    display: flex;
     background-image: url(../img/margarita.jpg);
+}
+
+.carrousel, .carrousel1, .carrousel2,  .carrousel3, .carrousel4, .carrousel5 {
+    display: flex;
     background-size: cover;
     background-position:center;
     height: 25vh;
-    justify-content: center;
+    justify-content: center;        
 }
 
  h2 {
@@ -93,7 +71,7 @@ nav {
 /*HOME*/
 
 main {
-    min-height:60vh;
+    min-height:58vh;
 }
 
 .btn-danger {
@@ -118,19 +96,26 @@ main {
 
 .containerTable {
     display: flex;
-    justify-content: center;
-    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
 .table {
-    width: 95%;
+    width: 45%;
     border: 1px solid #f2055c;
+    justify-content: center;
 }
 
-.table-danger {
+caption {
     font-size:1.5rem;
-    background-color: #f2055c;
-    border: 1px solid #f2055c;  
+    background-color: #e0a2b9;
+    border-top: 1px solid #f2055c; 
+    border-left: 1px solid #f2055c; 
+    border-right: 1px solid #f2055c; 
+    font-weight:600;
+    color: #0d0d0d;
+    padding-left: 10px;
 }
 
 th , td {
@@ -139,12 +124,18 @@ th , td {
 
 /*DETAILS*/
 
+.img {
+    align-self: center;
+}
 
+.card-title {
+    text-align: center;
+}
 
 /*FOOTER*/
 
 footer{
-    min-height: 10vh;
+    min-height: 8vh;
     background-color:#f2055c;
     display: flex;
     justify-content: space-around;
@@ -171,9 +162,21 @@ footer p {
     }
     h2 {
         font-size:3rem;
+        text-align: center;
+    }
+    .cardDetails {
+        min-width:20%;
     }
 
 }
+
+@media (max-width:768px) {
+    ul {
+        flex-direction:column;
+    }
+}
+
+
 
 @media (max-width:576px){
     .checkbox {
@@ -182,5 +185,25 @@ footer p {
     }
     h2 {
         font-size:2.5rem;
+        text-align: center;
     }
+    ul {
+        flex-direction:column;
+
+    }
+    .cardDetails {
+        min-width:20%;
+    }
+
+    caption {
+        font-size:1rem;
+    }
+}
+
+@media (max-width:332px) {
+    h2 {
+        font-size:2.5rem;
+        text-align: center;
+    }
+   
 }
