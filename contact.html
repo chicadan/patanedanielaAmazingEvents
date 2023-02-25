@@ -7,9 +7,72 @@
     <title>Home</title>
     <link rel="shortcut icon" href="./assets/img/Logo-Amazing-Events.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5388f691ef.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,1000;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
+    <header class="sticky-top">
+        <nav class="nav">
+            <a class="logo" href="./index.html">
+                <img src="./assets/img/LogoAmazingEvents.png" alt="logo Amazing Events" width="200" height="50">
+              </a>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="btn btn-outline"  href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline" href="./upcoming_events.html">Upcoming Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline" href="./past_events.html">Past Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline" href="./stats.html">Stats</a>
+              </li>
+          </ul>
+        </nav>
+        <div class="carrousel4">
+            <h2>Contact</h2>
+        </div>
+    </header>
+    <main>
+        <div class="containerForm d-flex justify-content-center">
+            <form action="showdata.html" method="get">
+                <div class="contact mb-1 p-2">
+                    <label for="formGroupExampleInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+                <div class="contact mb-1 p-2">
+                    <label for="inputEmail6" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail6" placeholder="example@email.com">
+                </div>
+                <div class="contact mb-1 p-2">
+                    <label for="floatingTextarea2">Message</label>
+                    <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height:150px"></textarea>
+                
+                </div>
+                <div class="contact mb-1 p-2 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-danger d-flex justify-content-end">Submit</button>
+                </div>
+            </form> 
+        </div>
+            
+         
+    </main>
+    <footer>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <p>FE08-TN</p>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
 </body>
 </html>
