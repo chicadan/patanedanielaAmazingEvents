@@ -68,7 +68,7 @@ nav {
     color:#087373;
 }
 
-/*HOME*/
+/*INDEX*/
 
 main {
     min-height:58vh;
@@ -78,6 +78,11 @@ main {
     background-color:#f2055c;
 }
 
+.form-check-input:checked {
+    background-color:#f2055c;
+    border-color: #f2055c;
+}
+
 
 .card {
   border: 1px solid #f2055c;
@@ -85,11 +90,30 @@ main {
   gap:2rem;
 }
 
+.cardjs {
+  border: 1px solid #f2055c;
+  box-shadow: 10px 10px #087373;
+  gap:2rem;
+}
+
+.cardjs img {
+    height:13rem;
+    object-fit: cover;
+}
+
+.card-text {
+    height: 30%;
+}
+
+
+
+
 
 /*CONTACT*/
 
 .form-control {
     border: 1px solid #f2055c;
+    width: 40vh;
 }
 
 /*STATS*/
@@ -109,7 +133,7 @@ main {
 
 caption {
     font-size:1.5rem;
-    background-color: #e0a2b9;
+    background-color: #F095B6;
     border-top: 1px solid #f2055c; 
     border-left: 1px solid #f2055c; 
     border-right: 1px solid #f2055c; 
@@ -154,6 +178,8 @@ footer{
 
 footer p {
     font-size:1.2em;
+    margin:0;
+    
 }
 
 @media (max-width:992px) {
@@ -174,6 +200,10 @@ footer p {
     ul {
         flex-direction:column;
     }
+
+    .nav-item , .btn-outline {
+        border: none;
+    }
 }
 
 
@@ -189,8 +219,11 @@ footer p {
     }
     ul {
         flex-direction:column;
-
     }
+
+    
+
+
     .cardDetails {
         min-width:20%;
     }
@@ -198,12 +231,21 @@ footer p {
     caption {
         font-size:1rem;
     }
+
+    .logo img {
+        width:180px;
+        height:40px;
+    }
 }
 
 @media (max-width:332px) {
     h2 {
         font-size:2.5rem;
         text-align: center;
+    }
+
+    .form-control {
+        width: 20vh;
     }
    
 }
