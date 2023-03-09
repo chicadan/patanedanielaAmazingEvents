@@ -78,6 +78,9 @@ main {
     background-color:#f2055c;
 }
 
+.form-check-input {
+    border-color:#f2055c;
+}
 .form-check-input:checked {
     background-color:#f2055c;
     border-color: #f2055c;
