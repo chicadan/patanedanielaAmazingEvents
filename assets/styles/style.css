@@ -108,10 +108,6 @@ main {
     height: 30%;
 }
 
-
-
-
-
 /*CONTACT*/
 
 .form-control {
@@ -124,6 +120,7 @@ main {
 .containerTable {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
 }
@@ -145,8 +142,13 @@ caption {
     padding-left: 10px;
 }
 
+th {
+    font-size:1.2rem
+}
+
 th , td {
     border: 1px solid #f2055c;
+    text-align: center;
 }
 
 /*DETAILS*/
@@ -207,6 +209,10 @@ footer p {
     .nav-item , .btn-outline {
         border: none;
     }
+
+    td {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -250,5 +256,14 @@ footer p {
     .form-control {
         width: 20vh;
     }
-   
+
+    caption {
+        font-size:1.2rem;
+    }
+    th {
+        font-size:1rem;
+    }
+    td {
+        font-size: 0.75rem;
+    }
 }
