@@ -2,11 +2,8 @@
 async function bringData() {
     try {
         const response = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
-        console.log(response)
         const data = await response.json()
-        console.log(data)
         const events = data.events
-        console.log(events)
 
         let inputsChecked = []
         let checkInfo = ""
@@ -24,7 +21,6 @@ async function bringData() {
         addSearchjs()
 
         let checkCategories = document.querySelectorAll('input[type=checkbox]')
-        console.log(checkCategories)
         checkCategories.forEach(check => check.addEventListener('change', checkClick))
 
         function checkClick() {
