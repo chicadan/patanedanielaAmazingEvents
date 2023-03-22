@@ -3,20 +3,15 @@
 async function bringData() {
     try {
         const response = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
-        console.log(response)
-        const data = await response.json()
-        console.log(data)
-        const events = data.events
-        console.log(events)
 
+        const data = await response.json()
+        const events = data.events
         const upEvents = events.filter(element => new Date(element.date) > new Date(data.currentDate))
-        console.log(upEvents)
 
         let inputsChecked = []
         let checkInfo = ""
 
         addCardsjs(upEvents, 'cardGroupUp');
-
 
         const checkjs = document.getElementById('cardGroupUp');
 
@@ -27,12 +22,11 @@ async function bringData() {
         addSearchjs()
 
         let checkCategories = document.querySelectorAll('input[type=checkbox]')
-        console.log(checkCategories)
+
         checkCategories.forEach(check => check.addEventListener('change', checkClick))
 
         function checkClick() {
             inputsChecked = Array.from(checkCategories).filter(checkCategories => checkCategories.checked).map(input => input.value)
-            console.log(inputsChecked);//array strings
             crossFilter(upEvents)
         }
 
@@ -50,7 +44,7 @@ async function bringData() {
         function crossFilter(arrayObject) {
             let arrayCheck = compareAndFilter(inputsChecked, arrayObject)
             let arraySearch = compareAndFilter2(checkInfo, arrayCheck)
-            addCardsjs(arraySearch,  'cardGroupUp')
+            addCardsjs(arraySearch, 'cardGroupUp')
         }
 
     }
@@ -60,9 +54,6 @@ async function bringData() {
 }
 
 bringData()
-
-
-
 
 //CARDS
 
@@ -98,8 +89,6 @@ function addCardsjs(arrayCard, idContainer) {
         cardjs.appendChild(fragment);
     }
 }
-
-
 
 //CHECKBOX
 

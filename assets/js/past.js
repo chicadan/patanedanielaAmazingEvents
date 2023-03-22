@@ -2,37 +2,31 @@
 async function bringData() {
     try {
         const response = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
-        console.log(response)
         const data = await response.json()
-        console.log(data)
         const events = data.events
-        console.log(events)
 
         const pastEvents = events.filter(element => new Date(element.date) < new Date(data.currentDate))
-        console.log(pastEvents)
 
         let inputsChecked = []
         let checkInfo = ""
 
         addCardsjs(pastEvents, 'cardGroupPast');
 
-
         const checkjs = document.getElementById('cardGroupPast');
 
         let uniqueCat = []
 
         let categories = events.map(events => !uniqueCat.includes(events.category) ? uniqueCat.push(events.category) : false);
-        
+
         addCheckjs(uniqueCat)
         addSearchjs()
 
         let checkCategories = document.querySelectorAll('input[type=checkbox]')
-        console.log(checkCategories)
+
         checkCategories.forEach(check => check.addEventListener('change', checkClick))
 
         function checkClick() {
             inputsChecked = Array.from(checkCategories).filter(checkCategories => checkCategories.checked).map(input => input.value)
-            console.log(inputsChecked);//array strings
             crossFilter(pastEvents)
         }
 
@@ -42,15 +36,14 @@ async function bringData() {
 
         function checkEnter(e) {
             let inputInfo = document.querySelector('input[type=text]')
-            checkInfo = inputInfo.value //imprime info
-            console.log(checkInfo)
+            checkInfo = inputInfo.value
             crossFilter(pastEvents)
         }
 
         function crossFilter(arrayObject) {
             let arrayCheck = compareAndFilter(inputsChecked, arrayObject)
             let arraySearch = compareAndFilter2(checkInfo, arrayCheck)
-            addCardsjs(arraySearch,  'cardGroupPast')
+            addCardsjs(arraySearch, 'cardGroupPast')
         }
 
     }
@@ -60,7 +53,6 @@ async function bringData() {
 }
 
 bringData()
-
 
 //CARDS
 
@@ -96,7 +88,6 @@ function addCardsjs(arrayCard, idContainer) {
         cardjs.appendChild(fragment);
     }
 }
-
 
 
 //CHECKBOX

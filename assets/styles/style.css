@@ -8,8 +8,8 @@
 /*HEADER*/
 
 header {
-   min-height: 20vh;
-   background-color: #17bfbf;
+    min-height: 20vh;
+    background-color: #17bfbf;
 }
 
 nav {
@@ -20,9 +20,8 @@ nav {
     justify-content: space-around;
 }
 
-
 .btn-outline {
-    color:#f2055c;
+    color: #f2055c;
     border: 1px solid #f2055c;
     margin-right: 10px;
 }
@@ -51,56 +50,61 @@ nav {
     background-image: url(../img/margarita.jpg);
 }
 
-.carrousel, .carrousel1, .carrousel2,  .carrousel3, .carrousel4, .carrousel5 {
+.carrousel,
+.carrousel1,
+.carrousel2,
+.carrousel3,
+.carrousel4,
+.carrousel5 {
     display: flex;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     height: 25vh;
-    justify-content: center;        
+    justify-content: center;
 }
 
- h2 {
+h2 {
     display: flex;
     justify-items: center;
     align-self: center;
     font-weight: bold;
     font-size: 4rem;
-    color:#087373;
+    color: #087373;
 }
 
 /*INDEX*/
 
 main {
-    min-height:58vh;
+    min-height: 58vh;
 }
 
 .btn-danger {
-    background-color:#f2055c;
+    background-color: #f2055c;
 }
 
 .form-check-input {
-    border-color:#f2055c;
-}
-.form-check-input:checked {
-    background-color:#f2055c;
     border-color: #f2055c;
 }
 
+.form-check-input:checked {
+    background-color: #f2055c;
+    border-color: #f2055c;
+}
 
 .card {
-  border: 1px solid #f2055c;
-  box-shadow: 10px 10px #087373;
-  gap:2rem;
+    border: 1px solid #f2055c;
+    box-shadow: 10px 10px #087373;
+    gap: 2rem;
 }
 
 .cardjs {
-  border: 1px solid #f2055c;
-  box-shadow: 10px 10px #087373;
-  gap:2rem;
+    border: 1px solid #f2055c;
+    box-shadow: 10px 10px #087373;
+    gap: 2rem;
 }
 
 .cardjs img {
-    height:13rem;
+    height: 13rem;
     object-fit: cover;
 }
 
@@ -126,27 +130,28 @@ main {
 }
 
 .table {
-    width: 45%;
+    width: 80%;
     border: 1px solid #f2055c;
     justify-content: center;
 }
 
 caption {
-    font-size:1.5rem;
+    font-size: 1.5rem;
     background-color: #F095B6;
-    border-top: 1px solid #f2055c; 
-    border-left: 1px solid #f2055c; 
-    border-right: 1px solid #f2055c; 
-    font-weight:600;
+    border-top: 1px solid #f2055c;
+    border-left: 1px solid #f2055c;
+    border-right: 1px solid #f2055c;
+    font-weight: 600;
     color: #0d0d0d;
     padding-left: 10px;
 }
 
 th {
-    font-size:1.2rem
+    font-size: 1.2rem
 }
 
-th , td {
+th,
+td {
     border: 1px solid #f2055c;
     text-align: center;
 }
@@ -163,53 +168,59 @@ th , td {
 
 /*FOOTER*/
 
-footer{
+footer {
     min-height: 8vh;
-    background-color:#f2055c;
+    background-color: #f2055c;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .icons i {
-   margin-right: 10px;
-   font-size: 2rem;
+    margin-right: 10px;
+    font-size: 2rem;
 }
 
 .icons i:hover {
-    color:#17bfbf;
+    color: #17bfbf;
     cursor: pointer;
 }
 
 footer p {
-    font-size:1.2em;
-    margin:0;
-    
+    font-size: 1.2em;
+    margin: 0;
+
 }
 
 @media (max-width:992px) {
     .containerNav {
         flex-direction: column;
     }
+
     h2 {
-        font-size:3rem;
+        font-size: 3rem;
         text-align: center;
     }
+
     .cardDetails {
-        min-width:20%;
+        min-width: 20%;
     }
 
 }
 
 @media (max-width:768px) {
     ul {
-        flex-direction:column;
+        flex-direction: column;
+    }
+    #searchGroupPast, #searchGroup, #searchGroupUp {
+        justify-content: center;
     }
 
-    .nav-item , .btn-outline {
+    .nav-item,
+    .btn-outline {
         border: none;
     }
-
+    
     td {
         font-size: 0.9rem;
     }
@@ -217,40 +228,49 @@ footer p {
 
 
 
-@media (max-width:576px){
+@media (max-width:576px) {
     .checkbox {
-       flex-wrap: wrap;
-       justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
     h2 {
-        font-size:2.5rem;
+        font-size: 2.5rem;
         text-align: center;
     }
+
     ul {
-        flex-direction:column;
+        flex-direction: column;
     }
 
-    
-
+    .form-control {
+        width: 20vh;
+    }
 
     .cardDetails {
-        min-width:20%;
+        min-width: 20%;
     }
 
     caption {
-        font-size:1rem;
+        font-size: 1rem;
     }
 
     .logo img {
-        width:180px;
-        height:40px;
+        width: 180px;
+        height: 40px;
     }
 }
 
 @media (max-width:332px) {
     h2 {
-        font-size:2.5rem;
+        font-size: 2.5rem;
         text-align: center;
+    }
+
+    .checkbox {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
     }
 
     .form-control {
@@ -258,11 +278,13 @@ footer p {
     }
 
     caption {
-        font-size:1.2rem;
+        font-size: 1.2rem;
     }
+
     th {
-        font-size:1rem;
+        font-size: 1rem;
     }
+
     td {
         font-size: 0.75rem;
     }
